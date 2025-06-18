@@ -1,0 +1,36 @@
+Time Complexity Comparison 
+
+
+Linear Search (linearSearch(List<Product>, String)):
+
+Best Case: O(1) – The product name matches the first item in the list.
+
+Average Case: O(n) – The product is somewhere in the middle of the list.
+
+Worst Case: O(n) – The product is at the end or not present in the list.
+
+Binary Search (binarySearch(List<Product>, String)):
+
+Pre-requisite: Requires the list to be sorted alphabetically by product name (case-insensitive). In the code, this is done using products.sort(NAME_COMPARATOR), which has a time complexity of O(n log n) once per sorting.
+
+Best Case: O(1) – The target product is exactly at the middle index.
+
+Average Case: O(log n) – The list is halved on each step to narrow down the search.
+
+Worst Case: O(log n) – Even if the product is not found, the process continues logarithmically until the search space is empty.
+
+Suitability for E-commerce Platform (Based on the Code)
+In an e-commerce system, efficient product searching is essential due to the large number of items and high search frequency.
+
+In the current code:
+
+Linear Search is simple and works on unsorted data, so it's useful for small or dynamically changing lists where sorting would be inefficient.
+
+Binary Search, however, requires sorted data, but is much faster on large datasets, especially when reads (searches) are more frequent than writes (additions/removals).
+
+Since the code first sorts the list by product name, it optimizes for binary search:
+
+Suitable for read-heavy scenarios, such as browsing or filtering in a product catalog.
+
+Not ideal if the list changes frequently, as re-sorting after each change incurs a performance cost (O(n log n)).
+
