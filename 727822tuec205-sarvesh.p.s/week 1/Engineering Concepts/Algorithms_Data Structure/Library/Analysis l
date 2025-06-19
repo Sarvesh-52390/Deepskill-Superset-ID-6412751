@@ -1,0 +1,25 @@
+Linear Search
+
+Approach: Iterates through the list one element at a time, comparing the title of each book with the target title.
+Data Requirement: Works on **unsorted** lists.
+
+Time Complexity:
+
+Best Case: Ω(1) – Target is the first element.
+Average Case: Θ(n) – Target is somewhere in the middle.
+Worst Case: O(n) – Target is at the end or not present.
+Space Complexity: Θ(1) – No extra space used.
+
+Binary Search
+
+Approach: Repeatedly divides the sorted list in half to locate the target title.
+Data Requirement: Requires the list to be **sorted** by title.
+Preprocessing Time: Sorting the list takes O(n log n) using `sort()`.
+
+Time Complexity:
+
+Best Case: Ω(1) – Target is exactly at the middle.
+Average Case: Θ(log n) – Search space halves each time.
+Worst Case: O(log n) – Target not present, full search space exhausted.
+Space Complexity: Θ(1) – No extra space used.
+

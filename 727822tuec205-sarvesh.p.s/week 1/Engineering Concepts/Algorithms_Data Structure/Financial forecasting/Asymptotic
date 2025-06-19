@@ -1,0 +1,38 @@
+Asymptotic Analysis of Future Value Prediction
+
+1. Recursive Approach (Without Memoization)
+
+Time Complexity:
+
+  Best Case:  Ω(1) – When `n = 0`
+  Average Case: Θ(n) – Linear recursion from `n` down to 0
+  Worst Case: O(n) – Maximum depth `n` when computing `FV(n)`
+
+Space Complexity:  Θ(n) – Due to recursion call stack
+
+---
+
+2. Recursive Approach (With Memoization)
+
+Time Complexity:
+
+Best Case:  Ω(1) – When result for `n` is already cached
+Average Case:Θ(n) – Each subproblem is solved once
+Worst Case:  O(n) – All values from 0 to `n` are computed and stored
+
+Space Complexity:  Θ(n) – For memoization map + call stack
+
+---
+
+3. Iterative Approach
+
+Time Complexity:**
+
+  Best Case:  Ω(n) – Must loop through all `n` years
+  Average Case: Θ(n)– Constant-time operations in a loop
+  Worst Case:O(n) – Loop runs from 1 to `n`
+
+Space Complexity:  Θ(1) – No recursion or extra storage needed
+
+
+

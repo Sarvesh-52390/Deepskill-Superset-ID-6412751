@@ -1,4 +1,4 @@
-public class Main {
+public class sp {
     public static void main(String[] args) {
         LogService loggerA = LogService.getLogger();
         LogService loggerB = LogService.getLogger();

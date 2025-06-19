@@ -1,0 +1,22 @@
+Time Complexity
+Add – O(1): Fast if space is available.
+Search – O(n): Checks each employee one by one.
+Traverse – O(n): Goes through all employees.
+Delete – O(n): Finds and shifts elements after the deleted one.
+
+
+ Limitations of Arrays
+
+ Fixed size: You can't add more employees than the array's limit.
+ Slow delete: Deleting means shifting other elements.
+ Wasted space: Empty slots still take memory.
+ Hard to insert in the middle: Elements need to be shifted.
+
+
+When to Use Arrays
+
+ You know how many employees you’ll manage.
+ You mostly add and read data, not delete or insert in the middle.
+ You want fast access using index numbers.
+
+

@@ -1,0 +1,56 @@
+Time Complexity Comparison: Future Value Calculation
+
+1. Recursive (No Memoization)
+
+```java
+double futureValue(int n, double initial, double rate) {
+    if (n == 0) return initial;
+    return futureValue(n - 1, initial, rate) * (1 + rate);
+}
+```
+
+>Best Case: O(n) – Even when `n` is 0, only one base case call is made.
+>Average Case: O(n) – Each level of recursion calls the previous one down to 0.
+>Worst Case: O(n) – Maximum recursion depth equals `n`.
+
+2. Recursive with Memoization
+
+```java
+Map<Integer, Double> cache;
+double futureValue(int n, double initial, double rate) {
+    if (n == 0) return initial;
+    if (cache.containsKey(n)) return cache.get(n);
+    double result = futureValue(n - 1, initial, rate) * (1 + rate);
+    cache.put(n, result);
+    return result;
+}
+```
+
+>Best Case: O(1) – If the value for `n` is already in the cache.
+>Average Case: O(n) – Each new value from 1 to `n` is computed once and then reused.
+>Worst Case: O(n) – All values from 1 to `n` are computed and stored.
+
+**3. Iterative Approach**
+
+```java
+double futureValueIterative(int n, double initial, double rate) {
+    double result = initial;
+    for (int i = 1; i <= n; i++) {
+        result *= (1 + rate);
+    }
+    return result;
+}
+```
+
+>Best Case: O(n) – Must loop through `n` iterations.
+>Average Case: O(n) – Each step involves a constant-time multiplication.
+>Worst Case: O(n) – Same as above.
+
+
+Use Case Recommendations
+
+>Recursive without memoization is best for small values of `n` where clarity is preferred over performance.
+>Recursive with memoization is useful when multiple values of `n` are queried repeatedly.
+>Iterative is optimal for large inputs and production-level performance due to its simplicity and low memory usage.
+
+
