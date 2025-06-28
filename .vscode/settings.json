@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "DuckDB",
+            "name": "week2",
+            "group": "digital",
+            "database": "${workspaceFolder:Deepskill-Superset ID 6412751}/727822tuec205-sarvesh.p.s/week2/Control structure.spsql"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

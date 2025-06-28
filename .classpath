@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Algorithms_Data Structure/E-Commerce"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Algorithms_Data Structure/Employee management"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Algorithms_Data Structure/Financial forecasting"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Algorithms_Data Structure/Library"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Algorithms_Data Structure/Task management"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Design Principles and Patterns/Adapter pattern"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Design Principles and Patterns/Decorater pattern"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Design Principles and Patterns/Dependency Injection"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Design Principles and Patterns/FactoryMethodPatternExample"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Design Principles and Patterns/SingletonPattern"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
