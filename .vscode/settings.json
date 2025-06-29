@@ -1,12 +1,21 @@
 {
-    "sqltools.connections": [
-        {
-            "previewLimit": 50,
-            "driver": "DuckDB",
-            "name": "week2",
-            "group": "digital",
-            "database": "${workspaceFolder:Deepskill-Superset ID 6412751}/727822tuec205-sarvesh.p.s/week2/Control structure.spsql"
-        }
-    ],
-    "sqltools.useNodeRuntime": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+  "java.project.sourcePaths": [
+    "src"
+  ],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": [
+    "libs/**/*.jar"
+  ],
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "DuckDB",
+      "name": "week2",
+      "group": "digital",
+      "database": "${workspaceFolder:Deepskill-Superset ID 6412751}/727822tuec205-sarvesh.p.s/week2/Control structure.spsql"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
 }
