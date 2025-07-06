@@ -11,5 +11,6 @@
 	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Design Principles and Patterns/Dependency Injection"/>
 	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Design Principles and Patterns/FactoryMethodPatternExample"/>
 	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week 1/week1/Design Principles and Patterns/SingletonPattern"/>
+	<classpathentry kind="src" path="727822tuec205-sarvesh.p.s/week3/librarymanagement/src/main/java/com/library"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
